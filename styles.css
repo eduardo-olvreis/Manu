@@ -1,65 +1,88 @@
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  border: 4px grey;
+  font-family: cursive;
+  background-color: #e5c07b;
 }
 
 header {
   background-color: #e5c07b;
   text-align: center;
+  padding: 20px;
 }
+
 header section {
-  margin-left: 190px;
-  margin-right: 190px;
-  font-size: large;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
 }
+
 #titulo {
   padding-top: 20px;
   padding-bottom: 30px;
 }
+
 .borda {
-  border: 30px #4e2a1c solid;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 100px;
-  padding-bottom: 60px;
+  border: 15px #4e2a1c solid;
+  margin: 10px;
+  padding: 20px;
   background-color: #8b5a2b;
 }
+
 main {
-  background-color: ;
-  padding: 50px; /* espaçamento entre o card de cima e de baixo com o footer e header */
+  padding: 20px;
   background-color: #e5c07b;
 }
+
 .fotos img {
   display: block;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
   border: 2px black solid;
   border-radius: 20px;
 }
+
 .fotos {
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
   border: 4px #4e2a1c solid;
   border-radius: 20px;
   background-color: #f5f5dc;
-  padding-top: 20px; /* espaçamento de cima da imagem e a borda*/
-  margin-bottom: 40px; /* espaçamento entre os cards*/
+  padding: 20px;
+  margin-bottom: 20px;
 }
+
 footer {
-  padding-right: 190px;
-  padding-left: 190px;
+  padding: 20px;
   background-color: #e5c07b;
   text-align: center;
-  font-size: large;
-  padding-bottom: 40px; /* espaçamento entre o final do footer e fim da página */
+  font-size: 1.2em;
 }
-div {
-  padding: 20px;
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  header section {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+
+  .borda {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .fotos img {
+    max-width: 100%;
+  }
+
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+  }
 }
